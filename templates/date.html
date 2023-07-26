@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations and Dates</title>
+    <link rel="stylesheet" href="/static/details.css">
+</head>
+<body>
+    <h2>{{.Name}}</h2>
+    <img src="{{.Image}}" alt="{{.Name}} Image">
+    <div >
+        <h1>Dates artist have already played</h1>
+    </div>
+    
+    <div class="container">
+       
+        {{range .DateData.Dates}}
+        <div class="event">
+            <div class="event-data">{{.}}</div>
+        </div>
+        {{end}}
+    </div>
+</body>
+</html>

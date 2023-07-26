@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations and Dates</title>
+    <link rel="stylesheet" href="/static/details.css">
+  
+</head>
+<body>
+    <h2>{{.Name}}</h2>
+    <img src="{{.Image}}" alt="{{.Name}} Image">
+    <div>
+        <h1>Location and Date</h1>
+    </div>
+    
+    <div class="container">
+        {{range .LocationDates}}
+        <div class="event">
+            <div class="event-data">{{ .Location }}</div>
+            <div class="event-data">{{ .Date }}</div>
+        </div>
+        {{end}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/menuelem.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <h1>Locations List</h1>
+        <ul class="card-list">
+            {{range .LocationList.ListOfLocation}}
+            <li class="card">
+                <div class="card-content">
+                    <div class="text-title">
+                        <a href="/locations-artist/{{.}}">{{.}}</a>
+                        <i class="fas fa-map-marker-alt"></i>
+
+                    </div>
+                </div>
+            </li>
+            {{end}}
+        </ul>
+    </div>
+</body>
+</html>
