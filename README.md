@@ -1,8 +1,8 @@
 # Open-Artist Website 🎵
 
-![Open-Artist](https://open-artist.onrender.com/)
 
 Welcome to the Open-Artist website - your ultimate destination to explore the vibrant world of music and artists! 🎶
+https://open-artist.onrender.com/
 
 ## About
 
